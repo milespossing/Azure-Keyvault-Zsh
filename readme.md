@@ -7,7 +7,7 @@ A simple plugin to make using azure keyvault from the azure cli a little less ve
 Clone this repo into your omz custom directory
 
 ```bash
-git clone placeholder placeholder
+git clone https://github.com/milespossing/Azure-Keyvault-Zsh.git $ZSH_CUSTOM/plugins/az-keyvault
 ```
 
 Export a variable `$AZ_KEYVAULT_NAME` which should be the name of the keyvault you are
