@@ -10,7 +10,7 @@ Clone this repo into your omz custom directory
 git clone https://github.com/milespossing/Azure-Keyvault-Zsh.git $ZSH_CUSTOM/plugins/az-keyvault
 ```
 
-Export a variable `$AZ_KEYVAULT_NAME` which should be the name of the keyvault you are
+Export a variable `AZ_KEYVAULT_NAME` which should be the name of the keyvault you are
 accessing.
 
 This plugin requires [fzf](https://github.com/junegunn/fzf) and [jq](https://github.com/stedolan/jq)
