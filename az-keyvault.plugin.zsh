@@ -17,9 +17,9 @@ list-secrets(){
 get-secrets(){
 	for var in "$@" 
 	do
-		echo "$var"
+		if [ $# -ne 1 ]; then echo "$var"; fi
 		echo $(az keyvault secret show --vault-name $AZ_KEYVAULT_NAME --name $var | jq -r '.value')
-		echo ""
+		if [ $# -ne 1 ]; then echo ""; fi 
 	done
 }
 
