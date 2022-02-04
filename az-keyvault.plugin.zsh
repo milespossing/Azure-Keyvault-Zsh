@@ -7,6 +7,8 @@ list-secrets(){
 		return 0
 	fi
 
+	mkdir -p $AZ_DIR
+
 	secrets=$(az keyvault secret list --vault-name $AZ_KEYVAULT_NAME | jq -r '.[] | .name')
 
 	echo $secrets > $secret_list_path
